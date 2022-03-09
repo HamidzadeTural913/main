@@ -1,0 +1,133 @@
+TASK 1                                     
+
+                                                         
+using System;
+
+namespace mainhomework
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Devide(17));
+        }
+
+
+        public static int Devide(int number)
+        {
+            if (number % 7 == 0)
+            { Console.WriteLine(number/7); }
+            int a = number % 7;
+            int b = 7 - a;
+
+             if(a>b)
+            { return number + b; }
+            else
+            { return number - a; }
+
+
+
+
+        }                    
+
+    }
+
+}
+
+Task 2
+
+using System;
+
+namespace mainhomework
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Sum(240,8));
+        }
+
+
+        public static int Sum(int number,int number2)
+        {
+           
+            return number * number2;    
+
+
+
+        }                    
+
+    }
+
+}
+
+Task3 
+using System;
+
+namespace mainhomework
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            number();
+            number2();
+            number3();      
+        }
+
+
+        public static int number()
+        {
+
+            int number = Convert.ToInt32(Console.ReadLine());
+            int count = 0;
+            if (number < 50)
+                for (int i = 1; i < number; i++)
+                {
+                    count++;
+                }
+            { Console.WriteLine(count); }
+            return number;
+
+
+
+        }
+        public static int number2()
+        {
+            int number2 = Convert.ToInt32(Console.ReadLine());
+            int count = 0;
+            if (number2 >= 50 && number2 < 100)
+                for (int i = 1; i < number2; i++)
+                    if (number2 % 5 == 0)
+                    {
+                        count++;
+                    }
+            {
+
+                Console.WriteLine(count);
+                return number2;
+            }
+
+
+
+        }
+        public static int number3()
+        {
+            int number3 = Convert.ToInt32(Console.ReadLine());
+            int count = 0;
+            if (number3 >= 100)
+                for (int i = 1; i < number3; i++)
+                    if (number3 % 8 == 0)
+                    {
+                        count++;
+                    }
+            {
+
+                Console.WriteLine(count);
+                return number3;
+            }
+
+        }
+
+    }
+}
